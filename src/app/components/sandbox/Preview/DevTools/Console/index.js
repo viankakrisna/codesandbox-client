@@ -17,12 +17,14 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+
 `;
 
 const Messages = styled.div`
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  white-space: pre-wrap;
 `;
 
 export type IMessage = {
