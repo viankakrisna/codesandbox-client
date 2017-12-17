@@ -108,6 +108,12 @@ requirePolyfills().then(() => {
           };
         }
 
+        // We convert the modules to a format the manager understands
+        // const normalizedModules = x.modules.map(m => ({
+        //   path: getModulePath(x.modules, x.directories, m.id),
+        //   code: m.code,
+        // }));
+
         const data = {
           sandboxId: id,
           modules: moduleObject,
